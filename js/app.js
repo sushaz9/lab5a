@@ -21,14 +21,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 function sum(a, b) {
   let result = a + b;
-  let string = `The sum of ${4} and ${7} is ${11}.`;
-  let message = "The sum of " + 4 + " and " + b + " is " + result + ".";
+  let string = `The sum of ${a} and ${b} is ${result}.`;
   return [result, string];
 }
 
+// Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
-
-//eslint-disable-line
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -42,11 +40,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) {
-  //eslint-disable-line
+  let result = a * b;
+  let string = `The product of ${a} and ${b} is ${result}.`;
+  return [result, string];
 }
+testMultiply(5, 9);
+
+//let message = "The product of " + a + " and " + b + " is " + result + ".";
+//eslint-disable-line
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+//multiply(5, 9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -56,6 +60,8 @@ Write a function called sumAndMultiply() that takes in three numbers as separate
 
 Third element: "4 and 7 and 5 sum to 16."
 Fourth element: "The product of 4 and 7 and 5 is 140."
+
+
 
 IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this function. To do addition, use your sum() function, and to do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
 
